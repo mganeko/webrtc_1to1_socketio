@@ -1,0 +1,23 @@
+{
+  "name": "webrtc_1to1_socketio",
+  "version": "1.0.0",
+  "description": "simple webrtc web/signaling server with node.js",
+  "main": "server_socketio.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "webrtc"
+  ],
+  "author": "mganeko",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mganeko/webrtc_1to1_socketio"
+  },
+  "dependencies": {
+    "express": "^4.16.4",
+    "socket.io": "^2.2.0",
+    "ws": "^7.0.0"
+  }
+}
