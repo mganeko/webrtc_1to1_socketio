@@ -89,6 +89,11 @@ export function connectSignaling(room) {
         closedFunc();
         break;
       }
+      case 'bye': {
+        console.log('bye from remote peer');
+        closedFunc();
+        break;
+      }
       default: {
         console.log("Invalid message");
         break;
