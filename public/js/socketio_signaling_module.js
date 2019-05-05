@@ -22,7 +22,7 @@ export function connectSignaling(room) {
   });
   socket.on('error', function (err) {
     console.error('socket.io ERROR:', err);
-    reject(err);
+    //reject(err);
   });
   socket.on('disconnect', function (evt) {
     console.log('socket.io disconnect:', evt);
