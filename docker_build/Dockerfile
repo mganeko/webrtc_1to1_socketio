@@ -9,6 +9,11 @@ RUN git clone https://github.com/mganeko/webrtc_1to1_socketio.git
 WORKDIR /root/work/webrtc_1to1_socketio
 RUN npm install
 
+# use tini for alpine
+RUN apk add --no-cache tini
+# Tini is now available at /sbin/tini
+ENTRYPOINT ["/sbin/tini", "--"]
+
 
 # Run the web service on container startup.
 EXPOSE 8080
