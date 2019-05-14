@@ -24,12 +24,15 @@ CMD [ "node", "server_socketio.js" ]
 #$ docker run -it mganeko/webrtc_socketio /bin/ash
 
 # -- run --
-#$ docker run -d -p 8001:8080 --name webrtc mganeko/webrtc_socketio
+#$ docker run --init -d -p 8001:8080 --name webrtc mganeko/webrtc_socketio
 # --> open http://localhost:8001/
 
 # -- run with PORT env --
-#$ docker run -d -e PORT=1323 -p 8002:1323 --name webrtc mganeko/webwebrtc_socketiortc_1to1
+#$ docker run --init -d -e PORT=1323 -p 8002:1323 --name webrtc mganeko/webwebrtc_socketio
 # --> open http://localhost:8002/
+
+# -- attach with sh --
+#$ docker exec -it webrtc /bin/ash
 
 # -- push to Docker Hub (hub.docker.com)
 #$ docker push mganeko/webrtc_socketio
