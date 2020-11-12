@@ -4,7 +4,8 @@
   "description": "simple webrtc web/signaling server with node.js",
   "main": "server_socketio.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server_socketio.js"
   },
   "keywords": [
     "webrtc"
